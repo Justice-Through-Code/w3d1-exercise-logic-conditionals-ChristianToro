@@ -13,7 +13,7 @@ def stock_purchases():
     # 1.2 TODO: Ask the client how many dollars they would like to invest (use the string: "How much would you like to invest? $")
     # and save it into a variable
     # NOTE: When you use the `input` function to get user input, what do numbers get saved as?
-    invest = float(input('How much would you like to invest? $ '))
+    invest = int(input('How much would you like to invest? $ '))
 
     # 1.3 TODO: Uncomment the line below to ask the client which stock they're interested in.
     # NOTE: Take a look at how this input string prints out
@@ -47,4 +47,4 @@ def stock_purchases():
     # 1.5 TODO: Once you've calculated the number of stocks that can be purchased,
     # Use an f-string to print the result for the client, ala:
     # Alex has $5000 to invest and can buy 50 shares of Apple at the current price of $100.
-    print(f'{name} has ${invest} to invest and can buy {shares} shares of {stock_name} at the current price of ${price}')
+    print(f'{name} has ${invest} to invest and can buy {int(shares)} shares of {stock_name} at the current price of ${price}.')
